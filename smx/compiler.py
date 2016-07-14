@@ -59,7 +59,7 @@ def compile_to_string(code, assemble=False, include_dir=INCLUDE_DIR,
 
 #XXX############################################################################################### don't commit me!
 #XXX############################################################################################### don't commit me!
-        raise Exception('spcomp exists: %b,   smx exists: %b,   sp_exists: %b' %(
+        raise Exception('spcomp exists: %s,   smx exists: %s,   sp_exists: %s' %(
             os.path.exists(compiler),
             os.path.exists(out.name),
             os.path.exists(fp.name),
