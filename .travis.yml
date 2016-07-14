@@ -5,3 +5,7 @@ language: python
 python: 2.7
 install: pip install -r test-requirements.txt
 script: py.test -v
+before_install:
+  - ls -l smx/spcomp/
+  - smx/spcomp/spcomp.elf --help
+  - /home/travis/build/theY4Kman/pysmx/smx/spcomp/spcomp.elf --help
