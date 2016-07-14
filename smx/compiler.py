@@ -57,6 +57,11 @@ def compile_to_string(code, assemble=False, include_dir=INCLUDE_DIR,
             args.append(extra_args)
         args.append(fp.name)
 
+#XXX############################################################################################### don't commit me!
+#XXX############################################################################################### don't commit me!
+        raise Exception(args)
+#XXX############################################################################################### don't commit me!
+#XXX############################################################################################### don't commit me!
         check_call(args, stdout=subprocess.PIPE)
 
         with open(out.name, 'rb') as compiled:
