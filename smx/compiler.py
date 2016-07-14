@@ -59,7 +59,11 @@ def compile_to_string(code, assemble=False, include_dir=INCLUDE_DIR,
 
 #XXX############################################################################################### don't commit me!
 #XXX############################################################################################### don't commit me!
-        raise Exception(args)
+        raise Exception('spcomp exists: %b,   smx exists: %b,   sp_exists: %b' %(
+            os.path.exists(compiler),
+            os.path.exists(out.name),
+            os.path.exists(fp.name),
+        ))
 #XXX############################################################################################### don't commit me!
 #XXX############################################################################################### don't commit me!
         check_call(args, stdout=subprocess.PIPE)
