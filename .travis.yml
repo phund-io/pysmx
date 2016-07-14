@@ -8,5 +8,8 @@ script: py.test -v
 before_install:
   - ls -l smx/spcomp/
   - pwd
+  - dpkg --add-architecture i386
+  - apt-get update
+  - apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
   - /home/travis/build/theY4Kman/pysmx/smx/spcomp/spcomp.elf --help
   - smx/spcomp/spcomp.elf --help
