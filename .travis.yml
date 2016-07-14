@@ -7,5 +7,6 @@ install: pip install -r test-requirements.txt
 script: py.test -v
 before_install:
   - ls -l smx/spcomp/
-  - smx/spcomp/spcomp.elf --help
+  - pwd
   - /home/travis/build/theY4Kman/pysmx/smx/spcomp/spcomp.elf --help
+  - smx/spcomp/spcomp.elf --help
